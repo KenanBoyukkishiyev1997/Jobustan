@@ -1,0 +1,69 @@
+ //Footer Bigen
+ .footer {
+    position: relative;
+    height: auto;
+    background-color: #000;
+
+    //Footer Navs Bigen
+    .footer__navs {
+        padding: 50px 0;
+
+        //Footer Navs Menu Bigen
+        .footer__navs__menu {
+            list-style-type: none;
+            display: block;
+
+            //Footer Navs Menu Item Bigen
+            .footer__navs__menu__ittem {
+                padding: 10px 0;
+                font-size: 15px;
+                text-transform: capitalize;
+
+                //Footer Navs Menu Item Links Bigen
+                .footer__navs__menu__item__links {
+                    text-decoration: none;
+                    color: #b4b4b4;
+
+                    //Footer Navs Menu Item Links Icon  Bigen
+                    i {
+                        padding: 0px 12px;
+                        font-size: 20px;
+                    }
+
+                    //Footer Navs Menu Item Links Icon  End
+
+                    //Footer Navs Menu Item Links Icon Background Bigen
+                    .back__icon {
+                        background-color: #fff;
+                        margin: 0 5px;
+                        height: 40px;
+                        line-height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        font-size: 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: 0.5s linear;
+
+                    }
+
+                    //Footer Navs Menu Item Links Icon Background End
+                }
+
+                //Footer Navs Menu Item Links End
+
+                .color__link {
+                    color: #be2d62;
+                }
+
+                //Footer Navs Menu Item End
+            }
+
+            //Footer Navs Menu Item End
+        }
+    }
+
+    //Footer Navs End
+}
+
+//Footer Bigen

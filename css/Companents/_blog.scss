@@ -1,0 +1,123 @@
+
+ //Section  Blog Card  Bigen
+ .section__blog__card {
+    position: relative;
+    box-shadow: 1px 4px 10px 2px $white-color-lghite-1;
+    width: 100%;
+    height: 100%;
+
+    //Section  Blog Card Body  Bigen
+    &__body {
+
+        //Section  Blog Card Body Title  Bigen
+        &__title {
+            text-transform: $text-uppercase;
+            font-weight: bolder;
+            font-size: 18px;
+            color:$pink-color;
+
+        }
+
+        //Section  Blog Card Body Title  End
+
+        //Section  Blog Card Body Text  Bigen
+        p {
+            font-size: 13px;
+            color:$grey-color-light-1;
+        }
+
+        //Section  Blog Card Body Text  End
+
+
+        .section__blog__card__body__link--color {
+            color: $grey-color-light-2;
+            font-size: 11px;
+            position: absolute;
+            bottom: 0;
+            padding: 0 0 7px 0;
+        }
+
+        .section__blog__card__body__link--color--hover {
+            color: $grey-color-light-2;
+            font-size: 11px;
+            transition: 0.5s linear;
+            text-transform: $text-lowercase;
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            padding: 0 0 7px 0;
+
+            &:hover {
+                color:$pink-color;
+            }
+        }
+    }
+
+    //Section  Blog Card Body  End
+}
+
+//Section  Blog Card  End
+
+
+    //Section Blog Bigen
+    .section__blog {
+        position: relative;
+        height: 100%;
+        margin: -100px 0;
+        overflow: hidden;
+
+        
+
+       
+
+        //Section  Blog Pagination  Bigen
+        .pagination {
+            float: right;
+
+            //Section  Blog Pagination Menu   Bigen
+            &__menu {
+                margin: auto;
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-end;
+
+                //Section  Blog Pagination Menu Item   Bigen
+                &__item {
+                    height: 30px;
+                    width: 30px;
+                    font-size: 15px;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: .3s linear;
+
+                    &:hover {
+                        background-color: $purple-color;
+
+                        .pagination__menu__item_link {
+                            color: $white-color;
+                        }
+                    }
+
+                    //Section  Blog Pagination Menu Item Link  Bigen
+                    &_link {
+                        text-decoration: none;
+                        color: $grey-color-darken-1;
+                        transition: .3s linear;
+                    }
+
+                    //Section  Blog Pagination Menu Item Link  Bigen
+                }
+
+                //Section  Blog Pagination Menu Item   Bigen
+
+            }
+
+            //Section  Blog Pagination Menu   End
+        }
+
+        //Section  Blog Pagination  End
+    }
+
+    //Section Blog End

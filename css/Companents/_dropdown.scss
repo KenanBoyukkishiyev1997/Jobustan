@@ -1,0 +1,59 @@
+.section__event__dropdown {
+    display: flex;
+    justify-content: space-between;
+
+
+    .dropdown {
+        &__button {
+            border: none;
+            box-shadow: 1px 1px 10px 3px $white-color-lghite-2;
+            outline: none;
+
+            &:hover {
+                color: $grey-color;
+            }
+        }
+
+        .section__event__menu__right-site {
+            left: -92px !important;
+            width: 260px;
+
+            .section__event__menu__item {
+                transition: .3s linear;
+
+                &:hover {
+                    color: $purple-color;
+                }
+            }
+        }
+
+        .section__event__menu__left-site {
+            left: 0px !important;
+            width: 260px;
+
+            .section__event__menu__item {
+                transition: .3s linear;
+
+                &:hover {
+                    color: $purple-color;
+                }
+            }
+        }
+    }
+
+    .section__event__dropdown_right-site {
+        display: inline-flex;
+
+        .post {
+            padding: 2px 25px 0 0;
+
+            &link:link{
+                text-decoration: none;
+                padding: 0 0 12px 0;
+                border-bottom: 2px solid $purple-color;
+
+               
+            }
+        }
+    }
+}

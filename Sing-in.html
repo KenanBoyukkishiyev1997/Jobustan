@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/imports.css">
+    <title>Blog page</title>
+</head>
+
+<body>
+    <!--  Header Bigen -->
+
+    <header class="header">
+        <div class="container">
+
+            <!--  Left site Bigen -->
+            <div class="header__logo__left">
+                <img class="header__logo--img" src="image/Logo.png" alt="Logo">
+                <i onclick="openNav()" id="navbar" class="fas fa-bars hamburger"></i>
+                <a class="link" style="display:none" href="#">EN</a>
+
+            </div>
+            <!--  Left site End -->
+
+            <!--  Right site Bigen -->
+            <div class="header__list__right">
+
+                <!--  Nav  Bigen -->
+                <ul class="menu">
+
+                    <li class="menu__item menu__dropdown__item">
+                        <a class="menu__link color-grey " href="#">Jobs</a>
+                        <ul class="second__menu">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Premium</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">VIP</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Regular</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu__dropdown__item">
+                        <a class="menu__link color-grey " href="#">Career</a>
+                        <ul class="second__menu">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Courses</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="training.html">Trainings</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu__item--border ">
+                        <a class="menu__link menu__link--border" href="#"> <i class="fas fa-user menu__icon"></i> Join</a>
+                    </li>
+                    <li class="menu__item  menu__item--border menu__dropdown__item">
+                        <a class="menu__link menu__link--border" href="#"><i class="fas fa-suitcase menu__icon"></i>
+                            Employer</a>
+                        <ul class="second__menu" style="    margin: auto;">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Join</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item  menu__item--border">
+                        <a class="menu__link menu__link--border " href="#"><i class="fas fa-plus menu__icon"></i>Post
+                            a Job</a>
+                    </li>
+                    <li class="menu__item ">
+                        <a class="menu__link color-purpel " href="#">EN</a>
+                    </li>
+                </ul>
+                <!--  Nav  End -->
+
+                <!--  Responsive right Nav  Bigen -->
+                <div id="myResponsive" class="Responsive">
+                    <a href="#" class="close_button" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <div class="clearfix"></div>
+                    <ul class="Responsive__menu">
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#">Jobs <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Premium</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">VIP</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Regular</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#">Career <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Courses</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="training.html">Trainings</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="events.html">Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item">
+                            <a class="Responsive__menu__item__link" href="#Join"><i class="fas fa-user menu__icon"></i>
+                                Join</a>
+                        </li>
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#"><i class="fas fa-suitcase menu__icon"></i>Employer
+                                <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Join</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item"><a href="#Post" class="Responsive__menu__item__link"><i
+                                    class="fas fa-plus menu__icon"></i>Post a Job</a></li>
+                    </ul>
+                </div>
+                <!--  Responsive right Nav  End -->
+
+            </div>
+            <!--  Right site End -->
+
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <!--  Header End -->
+
+    <!--  Section Events Title  Bigen -->
+
+    <section class="section__blog__title  section">
+        <div class="container">
+            <h2 class="section__blog__title--h1">Blog</h2>
+            <div class="border"></div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-12">
+                    <img src="image/BidGird.png" class="img-fluid img mb-3" alt="gird1">
+                </div>
+                <div class="col-md-8">
+                    <div class="text-center mb-3">
+                        <span class="Sing--title">CV NECƏ HAZIRLAMALI ? </span>
+                        <span class="Sing--subtitle">11 oktyabr 2019 </span>
+                    </div>
+
+                    <div class="Sing--text">
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                            McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                            more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                            cites of the word in classical literature, discovered the undoubtable source
+
+                        </p>
+                        <p class="uppercase">
+                            Good Deisng is making something inteligible and memoriale greate desing is making
+                            something inteligible and memoriale
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio sed sapiente consequatur
+                            qui
+                            id provident est blanditiis laborum ea. Quaerat error nihil quo voluptatum ea explicabo
+                            consectetur aliquid alias!consectetur aliquid alias!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio sed sapiente consequatur
+                            qui
+                            id provident est blanditiis laborum ea. Quaerat error nihil quo voluptatum ea explicabo
+
+                        </p>
+
+                        <img class="img-fluid img" src="image/pen.png" alt="pen">
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio sed sapiente consequatur
+                            qui
+                            id provident est blanditiis laborum ea. Quaerat error nihil quo voluptatum ea explicabo
+                            consectetur aliquid alias!consectetur aliquid alias!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio sed sapiente consequatur
+                            qui
+                            id provident est blanditiis laborum ea. Quaerat error nihil quo voluptatum ea explicabo
+
+                        </p>
+
+                    </div>
+                    <div class="sing__icon mb-3 float-right">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <div class="sing__icon--share--div " >
+                            <i onclick="OpensubShare()" class="sing__icon--share fas fa-share-alt"></i>
+
+                            <div class="sing__icon--share-Box" id="share">
+                                <i class="sing__icon--facebook fab fa-facebook-f"></i>
+                                <i class="sing__icon--google fab fa-google-plus-g"></i>
+                                <i class="sing__icon--twitter fab fa-twitter"></i>
+                                <i class="sing__icon--pinterest fab fa-pinterest-p"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+
+
+                    <div class="tag mb-5 float-left">
+                        <i class="tag--icon fas fa-tags"></i>
+                        <a class="tag--link" href="#">lifestayle</a>
+                        <a class="tag--link" href="#">lifestayle</a>
+                        <a class="tag--link" href="#">lifestayle</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <!--  Section Blog Subscribe Bigen -->
+                    <div class="section__wall__subscribe mb-3">
+                        <a id="Opensubscribe" onclick="Opensubscribe()" class="section__wall__subscribe__link" href="javascript:void(0);"><i
+                                class="fas fa-wifi"></i>Subcribe</a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- Section Blog Subscribe End -->
+
+                    <div class="text-center font-size-l mb-3 grey-color">Digerler</div>
+
+                    <!-- Section Blog Cards Bigen -->
+                    <div class="row">
+                        <!-- Section Blog Cards Col 1 Bigen  -->
+                        <div class="col-md-12  mb-4 ">
+                            <div class="card  section__blog__card  ">
+                                <a href="#"><img src="image/gird1.png" class="card-img-top img-fluid" alt="..."></a>
+                                <div class="card-body section__blog__card__body  ">
+                                    <h5 class="card-title section__blog__card__body__title ">CV
+                                        NECƏ HAZIRLANMALI </h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum
+                                        has
+                                        been
+                                        the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a
+                                        galley
+                                        of type and scrambled it to make a type specimen book...
+                                    </p>
+                                    <a href="#" class="card-link float-left section__blog__card__body__link--color">11.10.18
+                                    </a>
+
+                                    <a href="Sing-in.html" class="card-link float-right section__blog__card__body__link--color--hover">Read
+                                            More </a>
+
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Blog Cards Col 1 End  -->
+
+                        <!-- Section Blog Cards Col 2 Bigen  -->
+                        <div class="col-md-12 mb-4 ">
+                            <div class="card  section__blog__card">
+                                <a href="#"><img src="image/gird2.png" class="card-img-top img-fluid" alt="..."></a>
+                                <div class="card-body section__blog__card__body">
+                                    <h5 class="card-title section__blog__card__body__title  ">
+                                        MÜSAHİBƏDƏ NƏLƏRƏ DİQQƏT ETMƏLİ </h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum
+                                        has
+                                        been
+                                        the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a
+                                        galley
+                                        of type and scrambled it to make a type specimen book...
+                                    </p>
+                                    <a href="#" class="card-link float-left section__blog__card__body__link--color">11.10.18
+                                    </a>
+                                    <a href="Sing-in.html" class="card-link float-right section__blog__card__body__link--color--hover">Read
+                                        More </a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Blog Cards Col 2 End  -->
+
+                        <!-- Section Blog Cards Col 3 Bigen  -->
+                        <div class="col-md-12 mb-4 ">
+                            <div class="card  section__blog__card">
+                                <a href="#"><img src="image/gird3.png" class="card-img-top img-fluid" alt="..."></a>
+                                <div class="card-body section__blog__card__body">
+                                    <h5 class="card-title  section__blog__card__body__title  ">BUNLARI
+                                        BİLMƏLİ </h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum
+                                        has
+                                        been
+                                        the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a
+                                        galley
+                                        of type and scrambled it to make a type specimen book...
+                                    </p>
+                                    <a href="#" class="card-link float-left section__blog__card__body__link--color">11.10.18
+                                    </a>
+
+                                    <a href="Sing-in.html" class="card-link float-right section__blog__card__body__link--color--hover">Read
+                                            More </a>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Blog Cards Col 3 End  -->
+
+                    </div>
+                    <!-- Blog Cards End -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  Footer  Blog Bigen -->
+    <footer class="footer">
+        <div class="container">
+            <!--  Footer  Blog Nav Bigen -->
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__left">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">home</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">About
+                                    us</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="blog.html" class="footer__navs__menu__item__links">Blog</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Contact</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Terms
+                                    and Candition</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Help
+                                    & FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__right">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" style="font-size:18px;" class="footer__navs__menu__item__links color__link ">Recent
+                                    Jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Premium
+                                    jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">VIP
+                                    jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Regular
+                                    jobs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__left">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" style="font-size:18px;" class="footer__navs__menu__item__links color__link">Trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Free
+                                    trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Discounted
+                                    trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Tam
+                                    qiymt</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__right">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links"><i
+                                        class="fas fa-envelope color__link"></i>info@jobustan.az</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links"><i
+                                        class="fas fa-phone color__link"></i>999 99 99</a></li>
+
+                            <li class="footer__navs__menu__ittem">
+                                <a href="#" class="footer__navs__menu__item__links ">
+                                    <i class="fab fa-instagram back__icon color__link"></i><i class="fab fa-facebook-f back__icon color__link"></i><i
+                                        class="fab fa-linkedin-in back__icon color__link"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!--  Footer  Blog Nav End -->
+        </div>
+    </footer>
+    <!--  Footer  Blog End -->
+
+    <script src="javascript/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

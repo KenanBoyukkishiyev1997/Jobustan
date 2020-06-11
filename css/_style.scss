@@ -1,0 +1,49 @@
+
+   
+
+    // Section Bigen
+    .section {
+        position: relative;
+        padding: 30px 0;
+    }
+
+    // Section End
+
+    //Blog Title H1 Bigen
+    .section__blog__title {
+        height: 133px;
+        font-size: 20px;
+        background: #fff;
+
+
+
+        .section__blog__title--h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #686868;
+        }
+
+        .border {
+            display: block;
+            width: 86px;
+            height: 3px;
+            background-color: #686868;
+            margin: 12px auto;
+        }
+
+    }
+
+    //Blog Title H1 End
+
+
+    //Blog Background Wall Image Bigen
+    .section__wall {
+        background-image: url(../image/wall.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 336px;
+
+
+    }
+
+    //Blog Background Wall Image End

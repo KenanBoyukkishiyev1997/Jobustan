@@ -1,0 +1,34 @@
+
+//Section  Blog subscribe  Bigen
+.section__wall__subscribe {
+    float: right;
+    margin: auto 0;
+    padding: 7px 0;
+    position: relative;
+
+    //Section  Blog subscribe Link Bigen
+    .section__wall__subscribe__link{
+        text-decoration: none;
+        color: $pink-color;
+        font-size: 18px;
+        text-transform: $text-capitalize;
+        border: 1px solid $pink-color;
+        padding: 7px 15px;
+        font-weight: 700;
+        border-radius: 6px;
+        text-align: center;
+
+        //Section  Blog subscribe Link  Icon Bigen
+        i {
+            font-size: 14px;
+            padding: 5px 12px 12px 10px;
+            transform: rotate(45deg)
+        }
+
+        //Section  Blog subscribe Link  Icon End
+    }
+
+    //Section  Blog subscribe Link End
+}
+
+//Section  Blog subscribe  End

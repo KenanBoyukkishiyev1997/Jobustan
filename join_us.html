@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/imports.css">
+    <title>Review page</title>
+</head>
+
+<body>
+    <!--  Header Bigen -->
+
+    <header class="header">
+        <div class="container">
+
+            <!--  Left site Bigen -->
+            <div class="header__logo__left">
+                <img class="header__logo--img" src="image/Logo.png" alt="Logo">
+                <i onclick="openNav()" id="navbar" class="fas fa-bars hamburger"></i>
+                <a class="link" style="display:none" href="#">EN</a>
+
+            </div>
+            <!--  Left site End -->
+
+            <!--  Right site Bigen -->
+            <div class="header__list__right">
+
+                <!--  Nav  Bigen -->
+                <ul class="menu">
+
+                    <li class="menu__item menu__dropdown__item">
+                        <a class="menu__link color-grey " href="#">Jobs</a>
+                        <ul class="second__menu">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Premium</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">VIP</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Regular</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu__dropdown__item">
+                        <a class="menu__link color-grey " href="#">Career</a>
+                        <ul class="second__menu">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Courses</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="training.html">Trainings</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu__item--border ">
+                        <a class="menu__link menu__link--border" href="#"> <i class="fas fa-user menu__icon"></i> Join</a>
+                    </li>
+                    <li class="menu__item  menu__item--border menu__dropdown__item">
+                        <a class="menu__link menu__link--border" href="#"><i class="fas fa-suitcase menu__icon"></i>
+                            Employer</a>
+                        <ul class="second__menu" style="    margin: auto;">
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Join</a></li>
+                            <li class="second__menu__item"><a class="second__menu__item__link" href="#">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item  menu__item--border">
+                        <a class="menu__link menu__link--border " href="#"><i class="fas fa-plus menu__icon"></i>Post
+                            a Job</a>
+                    </li>
+                    <li class="menu__item ">
+                        <a class="menu__link color-purpel " href="#">EN</a>
+                    </li>
+                </ul>
+                <!--  Nav  End -->
+
+                <!--  Responsive right Nav  Bigen -->
+                <div id="myResponsive" class="Responsive">
+                    <a href="#" class="close_button" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <div class="clearfix"></div>
+                    <ul class="Responsive__menu">
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#">Jobs <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Premium</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">VIP</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Regular</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#">Career <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Courses</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="training.html">Trainings</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="events.html">Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item">
+                            <a class="Responsive__menu__item__link" href="#Join"><i class="fas fa-user menu__icon"></i>
+                                Join</a>
+                        </li>
+                        <li class="Responsive__menu__item menu__dropdown__item">
+                            <a class="Responsive__menu__item__link" href="#"><i class="fas fa-suitcase menu__icon"></i>Employer
+                                <i class="float-right fas fa-angle-right"></i></a>
+                            <ul class="Responsive__second__menu">
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Join</a></li>
+                                <li class="Responsive__second__menu__item"><a class="Responsive__second__menu__item__link"
+                                        href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                        <li class="Responsive__menu__item"><a href="#Post" class="Responsive__menu__item__link"><i
+                                    class="fas fa-plus menu__icon"></i>Post a Job</a></li>
+                    </ul>
+                </div>
+                <!--  Responsive right Nav  End -->
+
+            </div>
+            <!--  Right site End -->
+
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <!--  Header End -->
+
+    <section class="future section">
+        <div class="container">
+            <div class="future__SosialContact">
+                <a class="future__SosialContact--link mb-5" href="#">#GelecekBurda</a>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="future__SosialContact--iconBox">
+                            <i class="future__SosialContact--icon fab fa-instagram"></i>
+                            <span class="future__SosialContact--span">code.edu.az</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="future__SosialContact--iconBox">
+                            <i class="future__SosialContact--icon fab fa-facebook-f"></i>
+                            <span class="future__SosialContact--span">code.edu.az</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="future__SosialContact--iconBox">
+                            <i class="future__SosialContact--icon fab fa-linkedin-in"></i>
+                            <span class="future__SosialContact--span">code.edu.az</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Acount section ">
+        <div class="container">
+
+            <div class="Acount__LeftSite float-left mb-4">
+                <div class="Acount__LeftSite--LogoBox">
+                    <img src="image/Account__logo--img.png" alt="Account__logo" class="Account__logo">
+                </div>
+
+                <div class="Acount__LeftSite--TextBox">
+                    <span class="Account__logo--title">Code Academy</span>
+                    <span class="Account__logo--subtitle">Education center</span>
+                    <ul class="Account__menu">
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#"><i class="Account__menu__item__link__icon fas fa-star"></i></a></li>
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#"><i class="Account__menu__item__link__icon fas fa-star"></i></a></li>
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#"><i class="Account__menu__item__link__icon fas fa-star"></i></a></li>
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#"><i class="Account__menu__item__link__icon fas fa-star-half-alt"></i></a></li>
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#"><i class="Account__menu__item__link__icon far fa-star"></i></a></li>
+                        <li class="Account__menu__item"><a class="Account__menu__item__link" href="#">4.5</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="Acount__RightSite float-right mb-4">
+                <div class="Acount__RightSite--Follow">
+                    <button class="Acount__Follow">Follow</button>
+                    <span class="Acount__Reviews">300 reviews</span>
+                    <span class="Acount__Share ">Share</span>
+                    <span class="Share--icon"><i class="fas fa-share-alt"></i> </span>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+
+
+    <section class="Transaction ">
+        <div class="container">
+            <div class="Transaction__textBox">
+                <ul class="menu ">
+                    <li class="menu__item"><a class="menu__item__link menu__item--active" href="join_us.html">Why join
+                            us</a></li>
+                    <li class="menu__item "><a class="menu__item__link " href="review.html">Reviews</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="#">Jobs</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="#">Q&A</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="#">Interviews</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <hr>
+    </section>
+
+
+
+    <section class="optins section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="join__text">
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque cumque ad
+                            amet. Voluptate deleniti eligendi enim modi commodi? Laboriosam consectetur eaque rem
+                            magnam, mollitia voluptatibus doloremque similique non!
+                            Ex maxime autem, animi sit rerum nisi ullam dignissimos esse asperiores soluta deleniti,
+                            expedita odio tenetur laudantium accusamus qui, repellat perspiciatis quidem illum
+                            consectetur quibusdam? Quo repudiandae iure dolores id.
+                            <a href="#">more</a>
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex ratione dolore eum
+                            laudantium quis minima, neque nihil, nulla aliquid alias expedita voluptatibus quod
+                            accusamus odio. Sed officiis molestiae quos.
+                            <a href="#">less</a>
+                        </p>
+                    </div>
+                    <div class="join__img">
+                        <img  src="image/joinUs-1.png" alt="joinUs">
+                        <img  src="image/joinUs-2.png" alt="joinUs">
+                        <img  src="image/joinUs-3.png" alt="joinUs">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="schedule text-center">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <i class="menu__item--icon far fa-clock"></i>
+                                <h4 class="menu__item--title">Work hours</h4>
+                                <p class="menu__item--text">9.00 - 18.00 </p>
+                            </li>
+                            <li class="menu__item">
+                                <i class="menu__item--icon fas fa-check-circle"></i>
+                                <h4 class="menu__item--title">Benefits</h4>
+                                <p class="menu__item--text">Dinner Bus Bonus </p>
+                            </li>
+                            <li class="menu__item">
+                                <i class="menu__item--icon fas fa-users"></i>
+                                <h4 class="menu__item--title">Employee </h4>
+                                <p class="menu__item--text">50-100</p>
+                            </li>
+                            <li class="menu__item">
+                                <i class="menu__item--icon fas fa-globe"></i>
+                                <h4 class="menu__item--title">www.code.edu.az</h4>
+                            </li>
+                            <li class="menu__item">
+                                <i class="menu__item--icon fas fa-phone"></i>
+                                <h4 class="menu__item--title">+994 55 500 00 50</h4>
+                            </li>
+                            <li class="menu__item">
+                                <i class="menu__item--icon fas fa-map-marker-alt"></i>
+                                <h4 class="menu__item--title">Mammad Araz 50c </h4>
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--  Footer  Blog Bigen -->
+    <footer class="footer">
+        <div class="container">
+            <!--  Footer  Blog Nav Bigen -->
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__left">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">home</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">About
+                                    us</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="blog.html" class="footer__navs__menu__item__links">Blog</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Contact</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Terms
+                                    and Candition</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Help
+                                    & FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__right">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" style="font-size:18px;" class="footer__navs__menu__item__links color__link ">Recent
+                                    Jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Premium
+                                    jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">VIP
+                                    jobs</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Regular
+                                    jobs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__left">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" style="font-size:18px;" class="footer__navs__menu__item__links color__link">Trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Free
+                                    trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Discounted
+                                    trainings</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links">Tam
+                                    qiymt</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__navs footer__right">
+                        <ul class="footer__navs__menu">
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links"><i
+                                        class="fas fa-envelope color__link"></i>info@jobustan.az</a></li>
+                            <li class="footer__navs__menu__ittem"><a href="#" class="footer__navs__menu__item__links"><i
+                                        class="fas fa-phone color__link"></i>999 99 99</a></li>
+
+                            <li class="footer__navs__menu__ittem">
+                                <a href="#" class="footer__navs__menu__item__links ">
+                                    <i class="fab fa-instagram back__icon color__link"></i><i class="fab fa-facebook-f back__icon color__link"></i><i
+                                        class="fab fa-linkedin-in back__icon color__link"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!--  Footer  Blog Nav End -->
+        </div>
+    </footer>
+    <!--  Footer  Blog End -->
+
+    <script src="javascript/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

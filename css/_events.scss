@@ -1,0 +1,123 @@
+.section__event__card {
+    position: relative;
+    background-color: #fff;
+    transition: 0.3s linear;
+    border: 1px solid #b91d56;
+
+
+  
+
+    .events__card__body {
+        margin: 90px 0 0 0;
+    }
+
+
+    .Premium-icon {
+        position: absolute;
+        top: 30px;
+        width: 160px;
+        height: 46px;
+        line-height: 46px;
+        background-color: #b91d56;
+        color: #fff;
+
+        img {
+            padding: 0px 18px;
+
+        }
+    }
+
+
+    .VIP-icon {
+        position: absolute;
+        top: 30px;
+        width: 115px;
+        height: 46px;
+        line-height: 46px;
+        background-color: #b91d56;
+        color: #fff;
+
+        img {
+            padding: 0px 18px;
+
+        }
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: space-between;
+        margin: 51px -5px 0 0px;
+
+        .card__icon__calendar {
+
+            i {
+                color: #b91d56;
+                font-size: 50px;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .card__icon__clock {
+            i {
+                color: #b91d56;
+                font-size: 50px;
+
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+
+    }
+
+    &:hover {
+        background-color: #b91d56;
+
+        .card-body {
+            color: #fff;
+
+        }
+
+        .card-icon {
+            i {
+                color: #fff;
+
+            }
+        }
+
+        .semicircle {
+            color: black;
+            background: #fff;
+            border-color: transparent;
+        }
+    }
+
+    .semicircle {
+        position: absolute;
+        right: 30px;
+        bottom: 0px;
+        height: 91px;
+        text-align: center;
+        line-height: 91px;
+        font-size: 20px;
+        color: #fff;
+        width: 160px;
+        border: 1px solid black;
+        background: #b91d56;
+        border-radius: 16em 16em 0 0;
+        transition: 0.3s linear;
+
+
+    }
+
+
+}

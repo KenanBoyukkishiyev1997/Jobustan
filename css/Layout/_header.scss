@@ -1,0 +1,278 @@
+@import'abstracts/variables';
+
+ // Header Bigen
+ .header {
+     padding: 20px 0 20px;
+     height: 100%;
+     position: relative;
+
+ 
+     // Header Logo Left Site  Bigen
+     &__logo__left {
+         float: left;
+         display: flex;
+
+         // Hamburger Bigen
+         .hamburger {
+             display: none;
+             position: relative;
+             left: 20px;
+             top: 5px;
+             font-size: 26px;
+             color: #c33d6e;
+             cursor: pointer;
+         }
+
+         // Hamburger  End
+     }
+
+     // Header Logo Left Site  End
+
+
+     // Header Logo Right Site  Bigen
+     .header__list__right {
+         float: right;
+
+         // Header Menu  Bigen
+         .menu {
+             position: relative;
+             list-style-type: none;
+             display: flex;
+             justify-content: flex-end;
+
+             // Header Menu Item Bigen
+             &__item {
+                 padding: 5px 20px;
+                 width: 100px;
+                 border-radius: 5px;
+                 text-align: center;
+                 transition: 0.4s linear;
+
+                 // Header Menu Item Link Bigen
+                 .menu__link {
+                     text-transform: capitalize;
+                     text-decoration: none;
+                 }
+
+                 .color-grey {
+                     color: $grey-color-darken-1;
+                     transition: 0.4s linear;
+
+                     // &:hover {
+                     //     color: #c33d6e;
+                     //     border-bottom: 1px solid #c33d6e;
+                     //     padding: 6px 0;
+                     // }
+                 }
+
+
+                 .color-purpel {
+                     color: $pink-color;
+                 }
+
+                 // Header Menu Item Link End
+
+                 .second__menu {
+                     position: absolute;
+                     width: 100px;
+                     margin: 0 -20px;
+                     text-align: center;
+                     top: 38px;
+                     z-index: 1;
+                     box-shadow: 1px 6px 11px 2px #e8e8e8;
+                     display: none;
+
+                     .second__menu__item {
+                         display: block;
+                         background: $white-color;
+                         list-style-type: none;
+
+                         .second__menu__item__link {
+                             text-decoration: none;
+                             color: #868686;
+                             font-size: 13px;
+                             text-align: center;
+                         }
+                     }
+                 }
+
+                 &:hover {
+                     .menu__dropdown__ittem {
+                         background-color: #b40d4a;
+
+                     }
+
+
+
+                     .second__menu {
+                         display: block;
+                     }
+                 }
+             }
+
+             .menu__dropdown__item {
+                 &:hover {
+                     background-color: #b40d4a;
+
+                     .menu__link {
+                         color: $white-color;
+                     }
+                 }
+             }
+
+
+             // Header Menu Item  End
+
+
+         }
+
+         // Header Menu  End
+
+         // Header Responsive Bigen
+         .Responsive {
+             height: 100%;
+             width: 0;
+             position: fixed;
+             z-index: 1;
+             top: 0;
+             left: 0;
+             background-color: $white-color;
+             overflow-x: hidden;
+             overflow-y: hidden;
+             transition: 0.5s;
+             padding-top: 60px;
+
+
+
+             &__menu {
+
+                 &__item {
+                     margin: 13px 0 20px;
+
+
+                     &__link {
+                         padding: 8px 8px 8px 32px;
+                         text-decoration: none;
+                         font-size: 25px;
+                         color: #868686;
+                         display: block;
+                         transition: 0.3s;
+                         text-transform: capitalize;
+
+                         i {
+                             padding: 0px 10px 0 0;
+                         }
+                     }
+
+                     .Responsive__second__menu {
+                         display: none;
+                         background-color: #fff;
+
+                         &__item {
+                             display: block;
+                             background: #fff;
+                             list-style-type: none;
+
+                             &__link {
+                                 padding: 8px 3px 10px;
+                                 text-decoration: none;
+                                 font-size: 25px;
+                                 color: #686868;
+                                 text-align: center;
+                                 display: block;
+                                 transition: 0.3s;
+                                 text-transform: capitalize;
+
+                             }
+
+                             &:hover {
+                                 color: transparent;
+                             }
+                         }
+                     }
+                 }
+
+                 .menu__dropdown__item {
+                     border: 1px solid $black-color;
+                     background-color: #be2d62;
+
+                     .Responsive__menu__item__link {
+
+                         color: $white-color;
+
+
+                         i {
+                             padding: 0px 10px 0 0;
+                         }
+                     }
+
+                 }
+
+
+             }
+
+
+
+             .close_button {
+                 float: right;
+                 margin: 0px 20px;
+                 color: #be2d62;
+
+                 i {
+                     cursor: pointer;
+                     font-size: 36px;
+
+                 }
+             }
+         }
+
+         // Header Responsive End
+
+
+         //Second Header Menu Item Bigen
+         .menu__item--border {
+             border: 1px solid $grey-color;
+             border-radius: 4px;
+             width: 127px;
+             height: 36px;
+             line-height: 36px;
+             text-align: center;
+             padding: 0 !important;
+             margin: 0px 6px;
+             transition: 0.4s linear;
+
+             &:hover {
+                 border: 1px solid #c33d6e;
+
+                 .menu__link--border {
+                     color: #c33d6e;
+                 }
+             }
+
+             // Second Header Menu Item a Bigen
+
+             .menu__link--border {
+                 color: #686868;
+
+                 //Second Header Menu Item Link  Icon Bigeen
+                 .menu__icon {
+                     font-size: 14px;
+                     padding: 0 6px;
+                 }
+
+                 //Second Header Menu Item Link Icon End
+             }
+
+             // Second Header Menu Item Link End
+         }
+
+         //Second Header Menu Item  End
+
+
+         // Header Menu  End
+     }
+
+     // Header Logo Left Site  End
+ }
+
+ // Header End

@@ -1,0 +1,47 @@
+.future {
+    position: relative;
+    height: 100%;
+
+    &__SosialContact {
+        background-color: $white-color-light-3;
+        height: 100%;
+        text-align: center;
+        padding: 20px 0;
+
+        &--link {
+            display: block;
+            text-transform: $text-lowercase;
+            text-decoration: none;
+            font-size: 20px;
+            color: $grey-color-lghite-3;
+          &:hover{
+            color: $grey-color-lghite-3;
+            text-decoration: none;
+          }
+        }
+
+
+        &--iconBox {
+            .future__SosialContact--icon {
+                height: 40px;
+                line-height: 40px;
+                width: 40px;
+                background-color: $white-color;
+                color: $pink-color-light-1;
+                font-size: 20px;
+                margin: 0 10px 20px;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            .future__SosialContact--span {
+                color: $grey-color-darken-1;
+            }
+        }
+
+
+    }
+
+
+
+}
